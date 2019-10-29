@@ -6,7 +6,7 @@ export default class Root extends React.Component{
   render(){
     return (
       <div>
-        HELLO FROM ROOT
+        I am Root
       </div>
     )
   }

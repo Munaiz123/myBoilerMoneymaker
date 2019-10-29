@@ -1,23 +1,27 @@
 module.exports = {
-  mode: 'development',
-  entry: './app/main.js',
-  output:{
-    path: __dirname + '/public',
-    filename: 'bundle.js'
+  mode: "development",
+  entry: "./app/main.js",
+  output: {
+    path: __dirname + "/public",
+    filename: "bundle.js"
   },
-  devServer:{
-    contentBase:'./public'
+  devServer: {
+    contentBase: "./public"
   },
-  devtool: 'source-maps',
+  devtool: "source-maps",
+
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
+        loader: "babel-loader"
+      },
+
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
   }
-}
+};
