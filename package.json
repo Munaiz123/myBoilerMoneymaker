@@ -6,9 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build-watch & npm run start-server",
-    "start-server":"nodemon server",
-
-    "build-watch":"webpack -w",
+    "start-server": "nodemon server",
+    "build-watch": "webpack -w",
     "build": "webpack",
     "webpack-server": "webpack-dev-server --open",
     "start-dev": "webpack -w & webpack-dev-server --open"
@@ -31,8 +30,11 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "chalk": "^2.4.2",
     "express": "^4.17.1",
     "morgan": "^1.9.1",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-redux": "^7.1.1",
@@ -40,6 +42,7 @@
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
+    "sequelize": "^5.21.1",
     "volleyball": "^1.5.1"
   }
 }
