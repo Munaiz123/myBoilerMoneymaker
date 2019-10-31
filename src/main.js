@@ -5,8 +5,8 @@ import React from "react";
 import ReactDom from "react-dom";
 
 import {Provider} from "react-redux";
-import store from "./store";
-import Root from "./components/root";
+import store from "../app/store";
+import Root from "../app/components/root";
 
 
 
